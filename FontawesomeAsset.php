@@ -12,7 +12,7 @@ use yii\web\AssetBundle;
  */
 class FontawesomeAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/zelenin/yii2-summernote-widget/assets/fontawesome';
+    public $sourcePath = '@bower/fontawesome';
     public $depends = ['yii\bootstrap\BootstrapAsset'];
 
     public function init()

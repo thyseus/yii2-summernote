@@ -10,7 +10,7 @@ use yii\web\AssetBundle;
 class LanguageAsset extends AssetBundle
 {
     public $language;
-    public $sourcePath = '@vendor/zelenin/yii2-summernote-widget/assets/summernote/lang';
+    public $sourcePath = '@bower/summernote/lang';
 
     public function registerAssetFiles($view)
     {

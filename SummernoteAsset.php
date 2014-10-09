@@ -9,10 +9,11 @@ use yii\web\AssetBundle;
 
 class SummernoteAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/zelenin/yii2-summernote-widget/assets/summernote/dist';
+    public $sourcePath = '@bower/summernote/dist';
     public $depends = [
         'yii\bootstrap\BootstrapPluginAsset',
-        'Zelenin\yii\widgets\Summernote\FontawesomeAsset'
+        'Zelenin\yii\widgets\Summernote\FontawesomeAsset',
+        'Zelenin\yii\widgets\Summernote\CodemirrorAsset',
     ];
 
     public function init()
