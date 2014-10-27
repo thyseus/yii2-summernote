@@ -1,7 +1,5 @@
 <?php
-/**
- * @copyright Aleksandr Zelenin <aleksandr@zelenin.me>
- */
+
 namespace Zelenin\yii\widgets\Summernote;
 
 use yii\helpers\ArrayHelper;
@@ -18,8 +16,8 @@ class Summernote extends InputWidget
 
     public function init()
     {
-        $this->options = array_merge($this->options, $this->defaultOptions);
-        $this->clientOptions = array_merge($this->clientOptions, $this->defaultClientOptions);
+        $this->options = array_merge($this->defaultOptions, $this->options);
+        $this->clientOptions = array_merge($this->defaultClientOptions, $this->clientOptions);
         parent::init();
     }
 
