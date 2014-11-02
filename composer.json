@@ -1,7 +1,7 @@
 {
     "name": "zelenin/yii2-summernote-widget",
     "description": "Yii2 Summernote widget. Super simple WYSIWYG editor on Bootstrap",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "type": "yii2-extension",
     "keywords": [
         "yii2",
@@ -27,7 +27,7 @@
     "require": {
         "yiisoft/yii2": "~2",
         "bower-asset/fontawesome": "~4@stable",
-        "bower-asset/codemirror": "~4@stable",
+        "bower-asset/codemirror": "@stable",
         "bower-asset/summernote": "~0.5@stable"
     },
     "autoload": {
