@@ -4,15 +4,15 @@ namespace Zelenin\yii\widgets\Summernote;
 
 use yii\web\AssetBundle;
 
-/**
- * Class CodemirrorAsset
- * @package Zelenin\yii\widgets\Summernote
- */
 class CodemirrorAsset extends AssetBundle
 {
+    /** @var string */
     public $sourcePath = '@bower/codemirror';
 
-   public function init()
+    /**
+     * @inheritdoc
+     */
+    public function init()
     {
         $this->css[] = 'lib/codemirror.css';
         $this->css[] = 'theme/monokai.css';

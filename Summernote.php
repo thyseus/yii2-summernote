@@ -9,11 +9,18 @@ use yii\widgets\InputWidget;
 
 class Summernote extends InputWidget
 {
+    /** @var array */
     private $defaultOptions = ['class' => 'form-control'];
+    /** @var array */
     private $defaultClientOptions = ['height' => 200];
+    /** @var array */
     public $options = [];
+    /** @var array */
     public $clientOptions = [];
 
+    /**
+     * @inheritdoc
+     */
     public function init()
     {
         $this->options = array_merge($this->defaultOptions, $this->options);
@@ -21,6 +28,9 @@ class Summernote extends InputWidget
         parent::init();
     }
 
+    /**
+     * @inheritdoc
+     */
     public function run()
     {
         $view = $this->getView();
