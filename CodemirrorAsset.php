@@ -19,7 +19,6 @@ class CodemirrorAsset extends AssetBundle
 
         $this->js[] = 'lib/codemirror.js';
         $this->js[] = 'mode/xml/xml.js';
-        $this->js[] = "//cdnjs.cloudflare.com/ajax/libs/codemirror/2.36.0/formatting.min.js";
 
         parent::init();
     }

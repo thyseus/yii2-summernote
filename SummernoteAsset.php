@@ -13,7 +13,6 @@ class SummernoteAsset extends AssetBundle
     public $depends = [
         'yii\bootstrap\BootstrapPluginAsset',
         'Zelenin\yii\widgets\Summernote\FontawesomeAsset',
-        'Zelenin\yii\widgets\Summernote\CodemirrorAsset',
     ];
 
     /**
@@ -21,10 +20,10 @@ class SummernoteAsset extends AssetBundle
      */
     public function init()
     {
+        $postfix = YII_DEBUG ? '' : '.min';
+
         $this->css[] = 'summernote.css';
-        $this->js[] = YII_DEBUG
-            ? 'summernote.js'
-            : 'summernote.min.js';
+        $this->js[] = 'summernote' . $postfix . '.js';
 
         parent::init();
     }

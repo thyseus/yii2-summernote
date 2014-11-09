@@ -9,16 +9,17 @@ class FontawesomeAsset extends AssetBundle
     /** @var string */
     public $sourcePath = '@bower/fontawesome';
     /** @var array */
-    public $depends = ['yii\bootstrap\BootstrapAsset'];
+    public $depends = [
+        'yii\bootstrap\BootstrapAsset'
+    ];
 
     /**
      * @inheritdoc
      */
     public function init()
     {
-        $this->css[] = YII_DEBUG
-            ? 'css/font-awesome.css'
-            : 'css/font-awesome.min.css';
+        $postfix = YII_DEBUG ? '' : '.min';
+        $this->css[] = 'css/font-awesome' . $postfix . '.css';
         parent::init();
     }
 }
