@@ -22,7 +22,7 @@
     ],
     "support": {
         "issues": "https://github.com/zelenin/yii2-summernote-widget/issues",
-        "source": "https://github.com/zelenin/yii2-summernote-widget"
+        "source": "https://github.com/germanigortcev/yii2-summernote-widget"
     },
     "require": {
         "yiisoft/yii2": "~2",
