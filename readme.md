@@ -1,4 +1,4 @@
-# Yii2 Summernote widget
+# Yii2 Summernote widget. NOTE IT'S Summernote 0.6.16
 
 [Yii2](http://www.yiiframework.com) [Summernote](http://hackerwins.github.io/summernote) widget. Super simple WYSIWYG editor on Bootstrap
 
@@ -14,7 +14,7 @@ Either run
 
 or add
 
-	"zelenin/yii2-summernote-widget": "dev-master"
+	"germanigortcev/yii2-summernote-widget": "dev-master"
 
 to the require section of your composer.json
 
