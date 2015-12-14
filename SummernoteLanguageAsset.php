@@ -10,7 +10,7 @@ class SummernoteLanguageAsset extends AssetBundle
     /** @var string */
     public $language;
     /** @var string */
-    public $sourcePath = '@bower/summernote/lang';
+    public $sourcePath = '@bower/summernote-0.6.16/lang';
     /** @var array */
     public $depends = [
         'Zelenin\yii\widgets\Summernote\SummernoteAsset'
