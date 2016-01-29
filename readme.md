@@ -1,4 +1,4 @@
-# Yii2 Summernote widget. Summernote 0.6.16
+# Yii2 Summernote widget. Summernote 0.7.3
 
 [Yii2](http://www.yiiframework.com) [Summernote](http://hackerwins.github.io/summernote) widget. Super simple WYSIWYG editor on Bootstrap
 
