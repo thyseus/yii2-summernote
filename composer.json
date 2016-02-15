@@ -1,5 +1,5 @@
 {
-    "name": "marqu3s/summernote",
+    "name": "marqu3s/yii2-summernote",
     "description": "Yii2 Summernote widget. Super simple WYSIWYG editor on Bootstrap",
     "version": "0.1.0",
     "type": "yii2-extension",
