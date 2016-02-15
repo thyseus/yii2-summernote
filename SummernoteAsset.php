@@ -8,11 +8,10 @@ use yii\web\AssetBundle;
 class SummernoteAsset extends AssetBundle
 {
     /** @var string */
-    public $sourcePath = '@bower/summernote-0.6.16/dist';
+    public $sourcePath = '@bower/summernote/dist';
     /** @var array */
     public $depends = [
         'yii\bootstrap\BootstrapPluginAsset',
-        'Zelenin\yii\widgets\Summernote\FontawesomeAsset',
     ];
 
     /**
