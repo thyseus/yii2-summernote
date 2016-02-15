@@ -1,4 +1,4 @@
-# Yii2 Summernote widget. Summernote 0.7.3
+# Yii2 Summernote widget. Summernote 0.8.0
 
 [Yii2](http://www.yiiframework.com) [Summernote](http://hackerwins.github.io/summernote) widget. Super simple WYSIWYG editor on Bootstrap
 
@@ -10,11 +10,11 @@ The preferred way to install this extension is through [Composer](http://getcomp
 
 Either run
 
-	php composer.phar require zelenin/yii2-summernote-widget "dev-master"
+	php composer.phar require marqu3s/yii2-summernote "dev-master"
 
 or add
 
-	"germanigortcev/yii2-summernote-widget": "dev-master"
+	"marqu3s/yii2-summernote": "dev-master"
 
 to the require section of your composer.json
 
