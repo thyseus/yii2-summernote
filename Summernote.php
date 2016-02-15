@@ -1,6 +1,6 @@
 <?php
 
-namespace Zelenin\yii\widgets\Summernote;
+namespace marqu3s\summernote;
 
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
