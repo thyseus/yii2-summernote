@@ -37,6 +37,10 @@ or
 
 See [clientOptions](http://hackerwins.github.io/summernote/features.html)
 
-## Author
+## Original Author
 
 [Aleksandr Zelenin](https://github.com/zelenin/), e-mail: [aleksandr@zelenin.me](mailto:aleksandr@zelenin.me)
+
+## Updates by
+
+[João Marques](https://github.com/marqu3s/), e-mail: [joao@jjmf.com](mailto:joao@jjmf.com)
