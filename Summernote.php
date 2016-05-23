@@ -43,10 +43,22 @@ class Summernote extends InputWidget
         echo $this->hasModel()
             ? Html::activeTextarea($this->model, $this->attribute, $this->options)
             : Html::textarea($this->name, $this->value, $this->options);
+
+        $callbacks = $this->getExtendsParams('callbacks');
+        $buttons = $this->getExtendsParams('buttons');
+        $modules = $this->getExtendsParams('modules');
+
         $clientOptions = empty($this->clientOptions)
             ? null
             : Json::encode($this->clientOptions);
-        $this->getView()->registerJs('jQuery( "#' . $this->options['id'] . '" ).summernote(' . $clientOptions . ');');
+
+        $this->getView()->registerJs('
+            var params = '.$clientOptions.';'
+            . (empty($callbacks)?'':'params.callbacks = { '.$callbacks.' };')
+            . (empty($buttons)?'':'params.buttons = { '.$buttons.' };')
+            . (empty($modules)?'':'params.modules = { '.$modules.' };')
+            . 'jQuery( "#' . $this->options['id'] . '" ).summernote(  params );
+        ');
     }
 
     private function registerAssets()
@@ -63,4 +75,13 @@ class Summernote extends InputWidget
             SummernoteLanguageAsset::register($view)->language = $language;
         }
     }
+    
+    private function getExtendsParams($param){
+        $result = '';
+        foreach (ArrayHelper::remove($this->clientOptions, $param, []) as $val => $key){
+            $result .= (empty($result)?'':',').$val.': '.$key;
+        }
+        return $result;
+    }
+
 }
