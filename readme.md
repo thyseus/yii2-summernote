@@ -19,21 +19,26 @@ or add
 to the require section of your composer.json
 
 ## Usage
+```php
+use marqu3s\summernote\Summernote;
 
-	<?= $form->field($model, 'content')->widget(Summernote::className(), [
-		'clientOptions' => [
-			...
-		]
-	]) ?>
-
+<?= $form->field($model, 'content')->widget(Summernote::className(), [
+	'clientOptions' => [
+		...
+	]
+]) ?>
+```
 or
+```php
+use marqu3s\summernote\Summernote;
 
-	<?= Summernote::widget([
-		'name' => 'editor_id',
-		'clientOptions' => [
-			...
-		]
-	]) ?>
+<?= Summernote::widget([
+	'name' => 'editor_id',
+	'clientOptions' => [
+		...
+	]
+]) ?>
+```
 
 See [clientOptions](http://hackerwins.github.io/summernote/features.html)
 
